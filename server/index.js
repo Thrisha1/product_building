@@ -12,7 +12,11 @@ app.get('/api/hello', (req, res) => {
 });
 
 app.get('/api/smash', (req, res) => {
-    res.json({ message: 'Smash is a great game!' });
+    const smash = {
+        name: 'Smash',
+        description: 'Smash is a great game!',
+    }
+    res.json({ message: 'Smash is a great game!',info:JSON.stringify(smash) });
 });
 
 app.listen(PORT, () => {
