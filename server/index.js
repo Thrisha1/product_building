@@ -11,6 +11,10 @@ app.get('/api/hello', (req, res) => {
     res.json({ message: 'Hello, rinshad!' });
 });
 
+app.get('/api/smash', (req, res) => {
+    res.json({ message: 'Smash is a great game!' });
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
