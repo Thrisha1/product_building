@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 // Add a basic GET route
 app.get('/', (req, res) => {
-    res.json({ message: 'Hello, World!' });
+    res.json({ message: 'Welcome' });
 });
 
 app.get('/api/hello', (req, res) => {
