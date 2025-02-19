@@ -19,6 +19,11 @@ app.get('/api/smash', (req, res) => {
     res.json({ message: 'Smash is a great game!',info:JSON.stringify(smash) });
 });
 
+app.get('/api/smash/:name', (req, res) => {
+    const name = req.params.name;
+    res.json({ message: `Hello, ${name}!` });
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
